@@ -9,4 +9,10 @@ let search = (arr, nameToBeSearched) => {
 
 const addItem = (array, item) => [...array, item];
 
-module.exports = { addItem, search };
+//sum cart
+const sumCart = (cart) =>
+  cart.reduce((sum, item) => {
+    return sum + item.price;
+  }, 0);
+
+module.exports = { addItem, search, sumCart };
