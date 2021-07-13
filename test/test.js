@@ -1,5 +1,4 @@
-const { search } = require("../js/logic");
-const { addItem } = require("../js/logic");
+const { search,addItem } = require("../js/logic");
 
 // search for products
 describe("Testing search return value", () => {
