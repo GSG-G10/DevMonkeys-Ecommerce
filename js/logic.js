@@ -1,7 +1,5 @@
 // Add new product to cart
 
-function addItem(array, item) {
-    return [...array, item]
-};
+const addItem = (array, item) => [...array, item]
 
 module.exports = {addItem}
