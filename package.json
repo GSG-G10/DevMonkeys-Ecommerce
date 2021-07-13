@@ -1,0 +1,25 @@
+{
+  "name": "devmonkeys-ecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSG-G10/DevMonkeys-Ecommerce.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GSG-G10/DevMonkeys-Ecommerce/issues"
+  },
+  "homepage": "https://github.com/GSG-G10/DevMonkeys-Ecommerce#readme",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
