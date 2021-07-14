@@ -38,4 +38,22 @@ let search = (arr, nameToBeSearched) => {
 
 const addItem = (array, item) => [...array, item];
 
-module.exports = { filterByCategory,FilterByPrice ,addItem, search ,deleteItem};
+//sum cart
+const sumCart = (cart) =>
+  cart.reduce((sum, item) => {
+    return sum + item.price;
+  }, 0);
+
+// edit items
+const editItem = (arr, id, newValues) => {
+  const newArr = arr.map((item) => {
+    if (item.id === id) {
+      return { ...item, ...newValues };
+    } else {
+      return item;
+    }
+  });
+  return newArr;
+};
+
+module.exports = { addItem, search, editItem, sumCart ,FilterByPrice ,addItem, search ,deleteItem};
