@@ -18,7 +18,7 @@
   <body>
     <header class="header">
       <!--Navbar -->
-      <img class="logo" src="../logo.jpg" alt="logo" />
+      <img class="logo" src="../assets/logo.jpg" alt="logo" />
       <nav class="nav-container">
         <ul class="nav-list">
           <li><a class="nav-link" href="../html/buyer.html">Home</a></li>
@@ -38,15 +38,15 @@
     <div class="slideshow-container">
       <!-- Full-width images with number and caption text -->
       <div class="mySlides fade">
-        <img src="../img1.JPG" style="width: 100%" />
+        <img src="../assets/img1.JPG" style="width: 100%" />
       </div>
 
       <div class="mySlides fade">
-        <img src="../img2.jpg" style="width: 100%" />
+        <img src="../assets/img2.jpg" style="width: 100%" />
       </div>
 
       <div class="mySlides fade">
-        <img src="../img3.JPG" style="width: 100%" />
+        <img src="../assets/img3.JPG" style="width: 100%" />
       </div>
     </div>
     <br />
@@ -57,6 +57,23 @@
       <span class="dot" onclick="currentSlide(2)"></span>
       <span class="dot" onclick="currentSlide(3)"></span>
     </div>
+
+    <!-- start section all products -->
+    <section class="all-products">
+      <div class="header-products">
+        <h1>All Prodcuts</h1>
+        <input type="text" placeholder="search product by name" />
+        <select name="products">
+          <option value="price">sort by price</option>
+          <option value="category">sort by category</option>
+        </select>
+      </div>
+
+      <div class="container-products">
+        
+      </div>
+    </section>
+    <!-- end section all products -->
   </body>
   <script src="../js/Dom.js"></script>
 </html>
