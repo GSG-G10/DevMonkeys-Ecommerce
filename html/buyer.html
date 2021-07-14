@@ -17,7 +17,7 @@
   </head>
   <body>
     <header class="header">
-      <!-- start nav bar -->
+      <!--Navbar -->
       <img class="logo" src="/DevMonkeys-Ecommerce/logo.jpg" alt="logo" />
       <nav class="nav-container">
         <ul class="nav-list">
@@ -28,11 +28,35 @@
           </li>
         </ul>
       </nav>
-      
-      <!-- end nav bar -->
-      
+
+      <!-- Navbar -->
     </header>
-    <br>
-    <hr class='underline'> 
+    <br />
+    <hr class="underline" />
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img src="/DevMonkeys-Ecommerce/img1.JPG" style="width: 100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/DevMonkeys-Ecommerce/img2.jpg" style="width: 100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/DevMonkeys-Ecommerce/img3.JPG" style="width: 100%" />
+      </div>
+    </div>
+    <br />
+
+    <!-- The dots/circles -->
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
   </body>
+  <script src="/DevMonkeys-Ecommerce/js/Dom.js"></script>
 </html>
