@@ -1,6 +1,6 @@
 # DevMonkeys-Ecommerce-
 
-Baby Store live link: # <br>
+Baby Store live link: https://gsg-g10.github.io/DevMonkeys-Ecommerce/ <br>
 Baby Store for all kids wear.
 
 # Team members:
