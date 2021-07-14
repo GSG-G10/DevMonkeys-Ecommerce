@@ -39,6 +39,11 @@ input[type='number'] {
     color: #F00;
     cursor: pointer;
 }
+.container-price {
+    width: 80%;
+    margin: auto;
+    text-align: right;
+}
 @media (max-width:600px){
     .container-content {
         font-size: 0.8rem;
