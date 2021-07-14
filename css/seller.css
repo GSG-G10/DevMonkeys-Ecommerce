@@ -95,6 +95,12 @@
     flex-basis: 50%;
     text-indent: 10px;
 }
+.header-products input[type="submit"] {
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
 .header-products button {
     padding: 0 12px 0 12px;
     border: none;
