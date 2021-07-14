@@ -1,6 +1,5 @@
 // const { getItem, addCard, storeData } = require("../js/data");
 
-
 storeData();
 let slideIndex = 0;
 showSlides();
@@ -23,14 +22,12 @@ function showSlides() {
 let cart = [];
 const addToCartButton = document.querySelectorAll(".add");
 addToCartButton.forEach((el) => {
-  console.log(el);
   el.addEventListener("click", (e) => {
-    const item ={};
-    item.price= e.target.parentNode.children[2].textContent;
-    item.name= e.target.parentNode.children[0].children[0].textContent;
-    item.image= e.target.parentNode.parentNode.children[0].children[0].src;
+    const item = {};
+    item.price = e.target.parentNode.children[2].textContent;
+    item.name = e.target.parentNode.children[0].children[0].textContent;
+    item.image = e.target.parentNode.parentNode.children[0].children[0].src;
 
-
-    addCard(item)
+    addCard(item);
   });
 });
