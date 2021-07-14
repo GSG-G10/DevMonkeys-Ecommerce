@@ -136,6 +136,9 @@
   flex-basis: 50%;
   text-indent: 10px;
 }
+.search:hover {
+  cursor: pointer;
+}
 @media (max-width: 600px) {
   .header-products {
     flex-direction: column;
@@ -144,10 +147,6 @@
     margin-bottom: 3%;
   }
 }
-/* .container-products {
-  width: 80%;
-  margin: auto;
-} */
 
 .container-products {
   width: 80%;
