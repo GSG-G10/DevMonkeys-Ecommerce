@@ -42,11 +42,9 @@
 }
 .nav-list li a i {
   font-size: 1.5rem;
-  
 }
 .nav-list li a {
   transition: all 0.3s ease 0s;
-  
 }
 .nav-list li a:hover {
   color: rgb(247, 245, 255);
@@ -54,35 +52,32 @@
 .nav-list li:hover {
   transition: all 0.2s ease 0s;
   background-color: #1aaffa;
-  
+
   cursor: pointer;
 }
 
 .underline {
   border: none;
   height: 5px;
- 	width: 90%;
-	height: 50px;
-	margin-top: 0;
-	border-bottom: 1px solid #ffffff;
-	box-shadow: 0 10px 15px -20px #333;
-  margin: -50px auto 10px; 
+  width: 90%;
+  height: 50px;
+  margin-top: 0;
+  border-bottom: 1px solid #ffffff;
+  box-shadow: 0 10px 15px -20px #333;
+  margin: -50px auto 10px;
 }
 
 /* Slideshow container */
 .slideshow-container {
   max-width: 80%;
-  position: relative; 
+  position: relative;
   margin: auto;
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
-  
 }
-
-
 
 /* The dots/bullets/indicators */
 .dot {
@@ -96,7 +91,8 @@
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #9c3182;
 }
 
@@ -109,11 +105,48 @@
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
+
+/*start section all products*/
+.all-products {
+  margin-top: 2%;
+}
+.header-products {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.header-products input[type="text"] {
+  flex-basis: 50%;
+  text-indent: 10px;
+}
+@media (max-width: 600px) {
+  .header-products {
+    flex-direction: column;
+  }
+  .header-products input[type="text"] {
+    margin-bottom: 3%;
+  }
+}
+.container-products {
+  width: 80%;
+  margin: auto;
+}
+/*end section all products*/
