@@ -1,4 +1,4 @@
-const { search, addItem, editItem } = require("../js/logic");
+const { search, addItem, editItem, sumCart } = require("../js/logic");
 
 // search for products
 describe("Testing search return value", () => {
@@ -26,6 +26,19 @@ describe("Testing product items", () => {
   });
 });
 
+// sum cart
+describe("sum cart", () => {
+  test("sum the total of all items in cart", () => {
+    const cart = [
+      { id: 0, name: "t-shirt", price: 20 },
+      { id: 1, name: "top", price: 30 },
+      { id: 2, name: "pants", price: 40 },
+    ];
+    const actual = sumCart(cart);
+    const expected = 20 + 30 + 40;
+    expect(actual).toBe(expected);
+  });
+});
 //Edit item
 describe("Edit item", () => {
   test("editing the first item in the array", () => {
@@ -43,6 +56,7 @@ describe("Edit item", () => {
     console.log(actual);
     expect(actual).toEqual(expected);
   });
+
   test("editing the 2nd item in the array", () => {
     const arr = [
       { id: 0, name: "t-shirt", price: 20 },

@@ -9,6 +9,12 @@ let search = (arr, nameToBeSearched) => {
 
 const addItem = (array, item) => [...array, item];
 
+//sum cart
+const sumCart = (cart) =>
+  cart.reduce((sum, item) => {
+    return sum + item.price;
+  }, 0);
+
 // edit items
 const editItem = (arr, id, newValues) => {
   const newArr = arr.map((item) => {
@@ -21,4 +27,4 @@ const editItem = (arr, id, newValues) => {
   return newArr;
 };
 
-module.exports = { addItem, search, editItem };
+module.exports = { addItem, search, editItem, sumCart };
