@@ -1,10 +1,10 @@
 const products = [
-    {category: 'T-shirt', price: 5},
-    {category: 'pijames', price: 10},
-    {category: 'shoes', price: 50},
-    {category: 'T-shirt', price: 95},
-    {category: 'bags', price: 100},
-    {category: 'pants', price: 1000}
+    {id: 1 ,category: 'T-shirt', price: 5 },
+    {id :2,category: 'pijames', price: 10},
+    {id :3,category: 'shoes', price: 50},
+    {id :4,category: 'T-shirt', price: 95},
+    {id :5,category: 'bags', price: 100},
+    {id :6,category: 'pants', price: 1000}
   
 ];
 // filter by category function
@@ -20,6 +20,13 @@ function FilterByPrice(price) {
 }
 console.log(FilterByPrice(30));
 
+// Delete function
+let deleteItem = (products ,item) => {
+    const filterItem = products.filter( (i) => {return i.id !== item.id} )
+    return filterItem;
+};
+
+
 // search function
 
 let search = (arr, nameToBeSearched) => {
@@ -31,4 +38,4 @@ let search = (arr, nameToBeSearched) => {
 
 const addItem = (array, item) => [...array, item];
 
-module.exports = { filterByCategory,FilterByPrice ,addItem, search };
+module.exports = { filterByCategory,FilterByPrice ,addItem, search ,deleteItem};
