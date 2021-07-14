@@ -1,20 +1,20 @@
-const {filterByCategory , FilterByPrice ,search,addItem} = require ("../js/logic.js");
+const {filterByCategory , FilterByPrice ,search,addItem , deleteItem} = require ("../js/logic.js");
 describe("filterByCategory and FilterByPrice Function tests", () => {
-    const products = [
-        {category: 'T-shirt', price: 5},
-        {category: 'pijames', price: 10},
-        {category: 'shoes', price: 50},
-        {category: 'T-shirt', price: 95},
-        {category: 'bags', price: 100},
-        {category: 'pants', price: 1000}
-      
-    ];
+  const products = [
+    {id: 1 ,category: 'T-shirt', price: 5 },
+    {id :2,category: 'pijames', price: 10},
+    {id :3,category: 'shoes', price: 50},
+    {id :4,category: 'T-shirt', price: 95},
+    {id :5,category: 'bags', price: 100},
+    {id :6,category: 'pants', price: 1000}
+  
+];
     // filter by category function
     test("it should return products have the same input category", () => {
         const actual = filterByCategory("T-shirt");
         const expected = [
-            { category: 'T-shirt', price: 5 },
-            { category: 'T-shirt', price: 95 }
+            { id:1,category: 'T-shirt', price: 5 },
+            { id:4,category: 'T-shirt', price: 95 }
         ];
         expect(actual).toEqual(expected);
     });
@@ -24,11 +24,39 @@ describe("filterByCategory and FilterByPrice Function tests", () => {
 
         const actual = FilterByPrice(10);
         const expected = [
-            {category: 'T-shirt', price: 5},
-            {category: 'pijames', price: 10}
+            {id:1,category: 'T-shirt', price: 5},
+            {id:2,category: 'pijames', price: 10}
         ];
         expect(actual).toEqual(expected);
     });
+});
+
+describe("delete function tests", () => {
+  const products = [
+    {id: 1 ,category: 'T-shirt', price: 5 },
+    {id :2,category: 'pijames', price: 10},
+    {id :3,category: 'shoes', price: 50},
+    {id :4,category: 'T-shirt', price: 95},
+    {id :5,category: 'bags', price: 100},
+    {id :6,category: 'pants', price: 1000}
+  
+];
+  // delete function
+  test("delete an item in the array", () => {
+      const item = {id:1 ,category: 'T-shirt', price: 5};
+      const actual = deleteItem(products ,item);
+      const expected = [
+        
+        {id :2,category: 'pijames', price: 10},
+        {id :3,category: 'shoes', price: 50},
+        {id :4,category: 'T-shirt', price: 95},
+        {id :5,category: 'bags', price: 100},
+        {id :6,category: 'pants', price: 1000}
+      
+    ];
+      expect(actual).toEqual(expected); 
+  });
+
 });
 
 // search for products
