@@ -56,4 +56,9 @@ const editItem = (arr, id, newValues) => {
   return newArr;
 };
 
-module.exports = { addItem, search, editItem, sumCart ,FilterByPrice ,addItem, search ,deleteItem};
+
+if (typeof module !== 'undefined'){
+  module.exports={
+    addItem, search, editItem, sumCart ,FilterByPrice ,addItem, search ,deleteItem
+   }
+}
