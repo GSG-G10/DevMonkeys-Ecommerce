@@ -1,7 +1,7 @@
 # DevMonkeys-Ecommerce-
 
 Baby Store live link: # <br>
-Baby Store for all fashionate kids wear.
+Baby Store for all kids wear.
 
 # Team members:
 
@@ -13,16 +13,16 @@ Baby Store for all fashionate kids wear.
 # Project Description
 
 Baby Store provides all kind of kids wear for children who aims to be as fationable as it could be.
-The store provides foot wear clothes, face masks for kids, ...etc
+The store provides foot wear, clothes, face masks for kids, ...etc
 The website provides a huge variety of clothes and footwear to choose from.
 The website provides a smooth navigation experience throughout the website.
 The store is very versatile and it helps both Buyer, and Seller.
 #Buyer:
 Having trouble finding an item you desire, use the "search" bar to find your item.
-dont know where to start, use "sort" by category or price.
+Dont know where to start, use "sort" by category or price.
 With a simple click you can add whatever item you desire and it will be added to your cart.
 The cart provides you with the total of your items and offers the ability to delete any item you may not need.
-#Seller
+#Seller:
 The seller has the ability to add, edit, and delete items to the store, to keep his store up to date with the latest fashionable wear for your kids.
 all in all, these features serves the purpose to provide you the the best shopping/selling experience you need.
 
@@ -32,8 +32,8 @@ all in all, these features serves the purpose to provide you the the best shoppi
 
 # Buyer:
 
-- header section with a navbar where you can choose "Home", "Buyer/Seller", "Cart".
-- "header" also contains "Search" and "Sort" option .
+- "Header" section with a navbar where you can choose "Home", "Buyer/Seller", "Cart".
+- "Header" also contains "Search" and "Sort" option.
 - "Body" contains all items available in the shop.
 - Under each item is the price and the ability to add to cart.
 
@@ -44,6 +44,11 @@ all in all, these features serves the purpose to provide you the the best shoppi
 - "Header" has the "Add Product" button, where the seller can add all the new items.
 - "Body" scontains all items available in the shop.
 - Under each Item is the "Edit Product" button, to edit item information.
+
+# stretch goals:
+
+- Activate filter option in the website.
+- Activate the ability to edit items for the seller.
 
 # Installing the project locally:
 
