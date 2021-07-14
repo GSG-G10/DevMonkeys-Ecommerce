@@ -18,7 +18,7 @@
   border-radius: 8%;
 }
 .header {
-  background-color: #d3efff;
+  /* background-color: #d3efff; */
   border-radius: 15px;
   display: flex;
   justify-content: space-between;
@@ -38,19 +38,23 @@
   font-size: 1.3rem;
   border: 1px solid rgb(255, 255, 255);
   border-radius: 10px;
+  background-color: #d3efff;
 }
 .nav-list li a i {
   font-size: 1.5rem;
+  
 }
 .nav-list li a {
   transition: all 0.3s ease 0s;
+  
 }
 .nav-list li a:hover {
-  color: rgb(173, 145, 250);
+  color: rgb(247, 245, 255);
 }
 .nav-list li:hover {
   transition: all 0.2s ease 0s;
-  background-color: #f6fcff;
+  background-color: #1aaffa;
+  
   cursor: pointer;
 }
 
