@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/cart.css" />
 </head>
+
 <body>
     <table>
         <tr>
@@ -14,42 +16,13 @@
             <th>Quantity</th>
             <th>Price</th>
         </tr>
-        <tr>
-            <td>
-                <div class="description-product">
-                    <div class="conatiner-image">
-                        <img src="../assets/product1.webp" alt="product1">
-                    </div>
-                    <div class="container-content">
-                        <span>Boy T-shirt</span>
-                        <span>price : 20$</span>
-                        <span class="remove">remove</span>
-                    </div>
-                </div>
-            </td>
-            <td><input type="number" min="0"></td>
-            <td>20$</td>
-        </tr>
-        <tr>
-            <td>
-                <div class="description-product">
-                    <div class="conatiner-image">
-                        <img src="../assets/img1.JPG" alt="product1">
-                    </div>
-                    <div class="container-content">
-                        <span>Boy T-shirt</span>
-                        <span>price : 20$</span>
-                        <span class="remove">remove</span>
-                    </div>
-                </div>
-            </td>
-            <td><input type="number" min="0"></td>
-            <td>20$</td>
-        </tr>
     </table>
-    <script src='../js/data.js'></script>
-  <script src="../js/logic.js"></script>
-  <script src="../js/cart.js"></script>
+    <div class="container-price">
+        <h1>Total price : <span class="total-price"></span> $</h1>
+    </div>
+    <script src="../js/data.js"></script>
+    <script src="../js/logic.js"></script>
+    <script src="../js/cart.js"></script>
 </body>
 
 </html>
