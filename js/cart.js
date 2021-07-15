@@ -7,7 +7,7 @@ let tableHtml = `<tr>
         <th>Price</th>
         </tr>`;
 cartData.forEach((element) => {
-    tableHtml += `  <tr>
+  tableHtml += `  <tr>
     <td>
         <div class="description-product">
             <div class="conatiner-image">
@@ -29,23 +29,22 @@ table.innerHTML = tableHtml;
 
 const addToCartButton = document.querySelectorAll(".remove");
 addToCartButton.forEach((el) => {
-    console.log(el);
-    el.addEventListener("click", (e) => {
-        console.log(e.target.parentNode.parentNode.parentNode.parentNode);
-        removeItem(parseInt(e.target.parentNode.id));
-        const tbody = document.querySelector("tbody");
-        tbody.removeChild(e.target.parentNode.parentNode.parentNode.parentNode);
-        cartData = getItem();
-        getTotalPrice();
-    });
+  console.log(el);
+  el.addEventListener("click", (e) => {
+    console.log(e.target.parentNode.parentNode.parentNode.parentNode);
+    removeItem(parseInt(e.target.parentNode.id));
+    const tbody = document.querySelector("tbody");
+    tbody.removeChild(e.target.parentNode.parentNode.parentNode.parentNode);
+    cartData = getItem();
+    getTotalPrice();
+  });
 });
 
 function getTotalPrice() {
-    const totalPrice = document.querySelector(".total-price");
-    totalPrice.innerHTML = cartData.reduce(
-        (total, current) => parseInt(current.price.substring(1)) + total,
-        0
-    );
-    console.log(totalPrice);
+  const totalPrice = document.querySelector(".total-price");
+  totalPrice.innerHTML = cartData.reduce(
+    (total, current) => parseInt(current.price.substring(1)) + total,
+    0
+  );
 }
 getTotalPrice();
