@@ -1,30 +1,34 @@
 const products = [
-  { id: 1, category: 'T-shirt', price: 5 },
-  { id: 2, category: 'pijames', price: 10 },
-  { id: 3, category: 'shoes', price: 50 },
-  { id: 4, category: 'T-shirt', price: 95 },
-  { id: 5, category: 'bags', price: 100 },
-  { id: 6, category: 'pants', price: 1000 }
-
+  { id: 1, category: "T-shirt", price: 5 },
+  { id: 2, category: "pijames", price: 10 },
+  { id: 3, category: "shoes", price: 50 },
+  { id: 4, category: "T-shirt", price: 95 },
+  { id: 5, category: "bags", price: 100 },
+  { id: 6, category: "pants", price: 1000 },
 ];
 // filter by category function
 function filterByCategory(name) {
-  return products.filter(function (item) { return item.category === name });
+  return products.filter(function (item) {
+    return item.category === name;
+  });
 }
 filterByCategory();
 
 // filter by price function
 
 function FilterByPrice(price) {
-  return products.filter(function (item) { return item.price <= price });
+  return products.filter(function (item) {
+    return item.price <= price;
+  });
 }
 
 // Delete function
-let deleteItem = (products, item) => {
-  const filterItem = products.filter((i) => { return i.id !== item.id })
+const deleteItem = (products, item) => {
+  const filterItem = products.filter((i) => {
+    return i.id !== item.id;
+  });
   return filterItem;
 };
-
 
 // search function
 
@@ -55,9 +59,14 @@ const editItem = (arr, id, newValues) => {
   return newArr;
 };
 
-
-if (typeof module !== 'undefined') {
+if (typeof module !== "undefined") {
   module.exports = {
-    addItem, search, editItem, sumCart, FilterByPrice, deleteItem
-  }
+    filterByCategory,
+    addItem,
+    search,
+    editItem,
+    sumCart,
+    FilterByPrice,
+    deleteItem,
+  };
 }
